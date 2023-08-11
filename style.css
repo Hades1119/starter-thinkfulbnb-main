@@ -177,7 +177,7 @@ footer p {
 
 /* -------  Media Query for Desktop ------- */
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 768px) {
 
   /* ------- Navigation -------*/
 
@@ -216,18 +216,31 @@ footer p {
   #about {
     display: flex;
     flex-direction: column;
-    padding: 35px;
+    padding: 15px;
   }
 
   #about .aboutWrapper {
     display: flex;
     align-items: center;
-    gap: 25px;
+    gap: 10px;
   }
 
-  img {
-    width: 100%;
-    max-width: 1000px;
+  /* ------- Ideas ------- */
+
+  #ideas {
+    display: flex;
+    flex-wrap: wrap;
+  } 
+
+  .grouped-cat {
+    display: flex;
+  }
+
+  /* ------- Host -------- */
+
+  #host {
+    display: flex;
+    align-items: center;
   }
 
 }
