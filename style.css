@@ -2,6 +2,7 @@
 
 body {
   font-family: "Lato", sans-serif;
+  min-width: 320px;
 }
 
 h2 {
@@ -87,6 +88,10 @@ header nav ul li a:hover {
 }
 
 /* -------  Search Form ------- */
+form.group {
+  justify-content: space-between;
+}
+
 form {
   border: 2px solid #ff385c;
   padding: 10px;
@@ -99,10 +104,15 @@ form label {
 form select,
 form input {
   margin-bottom: 20px;
-  width: 180px;
+  flex: 2;
 }
 
-form div {
+form label {
+  flex: 1;
+}
+
+
+.search-item {
   display: flex;
   justify-content: space-between;
   padding: 3px 2px;
@@ -116,6 +126,7 @@ form button {
   padding: 15px;
   width: 100%;
 }
+
 
 /* -------  About ------- */
 
@@ -177,7 +188,7 @@ footer p {
 
 /* -------  Media Query for Desktop ------- */
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 769px) {
 
   /* ------- Navigation -------*/
 
@@ -198,19 +209,17 @@ footer p {
   }
 
   /* -------  Search Form ------- */
-
-  form {
-    display: flex;
-    flex-wrap: wrap;
+  
+  form.group {
+    flex-direction: row;
+    align-items: center;
     padding: 20px 20px;
   }
-  
-  form div {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-  }
 
+  .search-item {
+    flex-direction: column;
+  }
+  
   /* -------  About ------- */
 
   #about {
@@ -243,4 +252,10 @@ footer p {
     align-items: center;
   }
 
+}
+
+@media all and (max-width: 390px) {
+  .logo {
+    font-size: 50px;
+  }
 }

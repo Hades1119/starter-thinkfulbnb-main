@@ -35,20 +35,20 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
-        <form method="post">
-          <div>
+        <form method="post" class="group">
+          <div class="item search-item">
             <label for="location">Location</label>
             <input name="location" id="location" type="text"/>
           </div>
-          <div>
+          <div class="item search-item">
             <label for="arrival">Arrive</label>
             <input name="arrivalDate" id="arrival" type="date"/>
           </div>
-          <div>
+          <div class="item search-item">
             <label for="depart">Depart</label>
             <input name="departDate" id="depart" type="date"/>
           </div>
-          <div>
+          <div class="item search-item">
             <label for="type">Type</label>
             <select name="type" id="type">
               <option>Apartment</option>
@@ -60,7 +60,7 @@
               <option>Yurt</option>
             </select>
           </div>
-          <div>
+          <div class="item">
             <button type="submit">Search</button>
           </div>
         </form>
