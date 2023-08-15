@@ -216,6 +216,10 @@ footer p {
     padding: 20px 20px;
   }
 
+  input[type="text"]{
+    width:100%;
+}
+
   .search-item {
     flex-direction: column;
   }
